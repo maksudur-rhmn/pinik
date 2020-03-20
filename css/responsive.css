@@ -1,0 +1,600 @@
+/***************  Responsive CSS Starts ******************/
+
+
+
+/*  Extra Small Device */
+@media (min-width:320px) and (max-width:575px) {
+    /* Responsive Nav */
+
+    .navbar-toggler-icon .fa-bars {
+        color: #fff;
+        padding: 0 !important;
+    }
+
+    .navbar-toggler-icon .fa-times {
+        display: none;
+        color: #fff;
+
+    }
+
+    .navbar {
+        border-bottom: 1px solid #daa520;
+    }
+
+    .navbar ul {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .navbar ul li {}
+
+    .navbar ul li a:before {
+        display: none;
+    }
+
+    /* Responsive Banner */
+
+    #banner {
+        padding: 100px 0;
+        background: url(../img/responsiveBanner.jpg) no-repeat center;
+        background-size: cover;
+    }
+
+    #banner .bannerInfo {
+        text-align: center;
+    }
+
+    #banner .bannerInfo h4 {
+        text-align: center;
+    }
+
+    #banner .bannerInfo h5 {
+        text-align: center;
+        color: #fff;
+        padding-bottom: 50px;
+        display: block !important;
+    }
+
+    #banner .bannerInfo p {
+        display: none !important;
+    }
+
+    #banner #typed {
+        display: none !important;
+    }
+
+    #banner .toAbout {
+        display: none;
+    }
+
+    /* Responsive About */
+
+    #about .aboutImg img {
+        margin-left: -45px;
+    }
+
+    #about .aboutImg .aboutMe {
+        left: 8px;
+    }
+
+    #about .aboutImg .aboutMe:hover {
+        bottom: 0;
+    }
+
+    #about .aboutImg .aboutMe .aboutMeInner {
+        display: none;
+    }
+
+    #about .allInfo {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    /* Responsive Portfolio */
+
+    #portfolio .portfolioTitle ul li {
+        display: block;
+        margin-right: 0;
+    }
+
+    #portfolio .mix .overlay {
+        display: none;
+    }
+
+    #portfolio figure.snip1104.blue {
+        margin: 0 auto;
+    }
+
+    #portfolio-1 figure.snip1104.blue {
+        margin: 0 auto;
+    }
+
+    /* Responsive Feedback */
+
+    #feedback .feedbackBg .next {
+        display: none !important;
+    }
+
+    #feedback .feedbackBg .prev {
+        display: none !important;
+    }
+
+    #feedback .feedbackBg .review p {
+        padding: 0;
+        text-align: center;
+    }
+
+    /* Responsive Contact */
+    #contact .contactForm input {
+        margin-bottom: 90px;
+        width: 100%;
+    }
+
+    #contact .contactMessage textarea {
+        margin-top: -50px;
+        width: 100%;
+    }
+
+    /* Responsive About Page */
+
+    #aboutpage .aboutImg img {
+        width: 100%;
+    }
+
+    /* Responsive Price Page */
+
+    #pricing .price-details-info {
+        display: none !important;
+    }
+
+
+    /* Responsive Contact Page */
+
+    #contact1 .cLocation iframe {
+        width: 100% !important;
+    }
+
+
+
+
+}
+
+
+/*     Small Device  */
+
+@media (min-width:575px) and (max-width:767px) {
+
+    /* Responsive Nav */
+
+    .navbar-toggler-icon .fa-bars {
+        color: #fff;
+        padding: 0 !important;
+    }
+
+    .navbar-toggler-icon .fa-times {
+        display: none;
+        color: #fff;
+
+    }
+
+    .navbar {
+        border-bottom: 1px solid #daa520;
+    }
+
+    .navbar ul {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .navbar ul li {}
+
+    .navbar ul li a:before {
+        display: none;
+    }
+
+    /* Responsive Banner */
+
+    #banner {
+        padding: 100px 0;
+        background: url(../img/responsiveBanner.jpg) no-repeat center;
+        background-size: cover;
+    }
+
+    #banner .bannerInfo {
+        text-align: center;
+    }
+
+    #banner .bannerInfo h4 {
+        text-align: center;
+    }
+
+    #banner .bannerInfo h5 {
+        display: none !important;
+    }
+
+    #banner .bannerInfo p {
+        text-align: center;
+        width: 100%;
+    }
+
+    #banner .toAbout {
+        display: none;
+    }
+
+    /* Responsive About */
+
+    #about .aboutImg img {
+        margin-left: 46px;
+    }
+
+    #about .aboutImg .aboutMe {
+        left: 8px;
+    }
+
+    #about .aboutImg .aboutMe:hover {
+        bottom: 0;
+    }
+
+    #about .aboutImg .aboutMe .aboutMeInner {
+        display: none;
+    }
+
+    #about .allInfo {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    /* Responsive Portfolio */
+
+    #portfolio .portfolioTitle ul li {
+        display: block;
+        margin-right: 0;
+    }
+
+    #portfolio-1 figure.snip1104.blue {
+        margin: 0 auto;
+    }
+
+    figure.snip1104.blue {
+        margin: 0 auto;
+    }
+
+    #service .mobile {
+        display: block !important;
+    }
+
+    #feedback .feedbackBg .next {
+        display: none !important;
+    }
+
+    #feedback .feedbackBg .prev {
+        display: none !important;
+    }
+
+    #feedback .feedbackBg .review p {
+        padding: 0;
+        text-align: center;
+    }
+
+    #contact .contactForm input {
+        margin-bottom: 90px;
+        width: 100%;
+    }
+
+    #contact .contactMessage textarea {
+        margin-top: -50px;
+        width: 100%;
+    }
+
+    /* Responsive About Page */
+
+    #aboutpage .allInfo .moreDetails {
+        text-align: center;
+    }
+
+    #aboutpage .allInfo .aboutDetails p {
+        text-align: center;
+    }
+
+    /* Responsive Price Page */
+    #pricing .price-details-info {
+        display: none !important;
+    }
+
+    /* Responsive Contact Page */
+
+    #contact1 .cLocation iframe {
+        width: 100% !important;
+    }
+}
+
+/*     Tab or Medium Device  */
+@media (min-width:768px) and (max-width:991px) {
+
+    /* Responsive Nav */
+
+    .navbar-toggler-icon .fa-bars {
+        color: #fff;
+        padding: 0 !important;
+    }
+
+    .navbar-toggler-icon .fa-times {
+        display: none;
+        color: #fff;
+
+    }
+
+    .navbar {
+        border-bottom: 1px solid #daa520;
+    }
+
+    .navbar ul {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .navbar ul li {}
+
+    .navbar ul li a:before {
+        display: none;
+    }
+
+    /* Responsive Banner */
+
+    #banner .bannerInfo h5 {
+        display: none !important;
+    }
+
+    #about .aboutImg img {
+        margin-left: 140px;
+    }
+
+    #about .aboutImg .aboutMe {
+        left: 8px;
+    }
+
+    #about .aboutImg .aboutMe:hover {
+        bottom: 0;
+    }
+
+    #about .aboutImg .aboutMe .aboutMeInner {
+        display: none;
+    }
+
+    #about .allInfo {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    /* Responsive Service */
+
+    #service .webDesign .webDEsignDetails {
+        display: none;
+    }
+
+    /* Responsive Portfolio */
+
+    #portfolio .mix .overlay {
+        display: none;
+    }
+
+    /* Responsive Feedback */
+
+    #feedback .feedbackBg .next {
+        display: none !important;
+    }
+
+    #feedback .feedbackBg .prev {
+        display: none !important;
+    }
+
+    #feedback .feedbackBg .review p {
+        padding: 0;
+        text-align: center;
+    }
+
+    #contact .contactForm input {
+        margin-bottom: 90px;
+        width: 100%;
+    }
+
+    #contact .contactMessage textarea {
+        margin-top: -50px;
+        width: 100%;
+    }
+
+    /* Responsive About Page */
+
+    #aboutpage .allInfo .moreDetails {
+        text-align: center;
+    }
+
+    /* Responsive Price Page */
+
+
+    /* Responsive Contact Page */
+
+    #contact1 .cLocation iframe {
+        width: 100% !important;
+    }
+}
+
+/*     Large to Extra Large Device   */
+
+@media (min-width:992px) and (max-width:1199px) {
+
+    /* Rsponsive Banner */
+
+    #banner .bannerInfo h5 {
+        display: none !important;
+    }
+
+    /* Responsive About */
+
+    #about {
+        background: #1F2336;
+        padding: 100px 0;
+    }
+
+    #about h3 {
+        font-family: "Raleway", sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        color: #fff;
+        text-transform: inherit;
+    }
+
+    #about .aboutImg {
+        margin-top: 60px;
+        position: relative;
+    }
+
+    #about .aboutImg .aboutMe {
+        width: 110%;
+        padding: 5px 0;
+        background: #daa520;
+        position: absolute;
+        bottom: -10px;
+        left: 29px;
+        transition: 1s all linear;
+        -webkit-transition: 1s all linear;
+        -moz-transition: 1s all linear;
+        -o-transition: 1s all linear;
+    }
+
+    #about .aboutImg .aboutMe h5 {
+        font-family: "Raleway", sans-serif;
+        font-size: 24px;
+        color: #1F2336;
+        font-weight: 700;
+    }
+
+    #about .aboutImg .aboutMe p {
+        font-family: "Roboto Slab", serif;
+        font-size: 16px;
+        color: #1F2336;
+        font-weight: 400;
+    }
+
+    #about .aboutImg .aboutMe:hover {
+        background: rgba(218, 165, 32, 0.6);
+        bottom: 42px;
+        border-bottom: 5px solid #1F2336;
+    }
+
+    #about .aboutImg .aboutMe:hover .aboutMeInner {
+        bottom: -140px;
+        opacity: 1;
+    }
+
+    #about .aboutImg .aboutMe .aboutMeInner {
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        width: 100%;
+        padding: 30px 0;
+        background: rgba(218, 165, 32, 0.6);
+        z-index: 99999;
+        opacity: 0;
+        transition: 1s all linear;
+        -webkit-transition: 1s all linear;
+        -moz-transition: 1s all linear;
+        -o-transition: 1s all linear;
+    }
+
+    #about .allInfo {
+        margin-left: 94px;
+    }
+
+    #about .allInfo .aboutDetails {
+        margin-top: 146px;
+    }
+
+    #about .allInfo .aboutDetails h5 {
+        color: #fff;
+        font-family: "Roboto Slab", serif;
+        font-size: 24px;
+        color: #daa520;
+        font-weight: 700;
+    }
+
+    #about .allInfo .aboutDetails p {
+        margin-top: 30px;
+        color: #fff;
+        font-family: "Roboto Slab", serif;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    #about .allInfo .moreDetails ul {
+        margin-top: 15px;
+        margin-right: 30px;
+    }
+
+    #about .allInfo .moreDetails ul li {
+        margin-top: 10px;
+    }
+
+    #about .allInfo .moreDetails ul li a {
+        font-family: secondaryFont;
+        font-size: 16px;
+        font-weight: 700;
+        color: #daa520;
+    }
+
+    #about .allInfo .moreDetails ul li a span {
+        color: #fff;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    #about .allInfo .socialMedia {
+        margin-top: 10px;
+    }
+
+    #about .allInfo .socialMedia i {
+        color: #fff;
+        margin-right: 20px;
+        border: 1px solid #fff;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 3px;
+        transition: 0.4s all linear;
+        -webkit-transition: 0.4s all linear;
+        -moz-transition: 0.4s all linear;
+        -o-transition: 0.4s all linear;
+    }
+
+    #about .allInfo .socialMedia i:hover {
+        background: #daa520;
+        border: 1px solid transparent;
+        color: #1F2336;
+    }
+
+    #about .allInfo .socialMedia i:nth-child(1) {
+        margin-left: 20px;
+    }
+
+
+    /* Responsive About Page */
+
+    #aboutpage .allInfo .moreDetails {
+        text-align: center;
+    }
+
+
+    /* Responsive Contact Page */
+
+
+    #contact1 .cLocation iframe {
+        width: 100% !important;
+    }
+
+
+}
+
+
+/***************  Responsive CSS Ends ******************/

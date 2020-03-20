@@ -1,0 +1,2337 @@
+/* 
+------------------
+Template Name: Pinik
+Author: Hub Of Coders
+Author Email: ahmedfarahnaz1@gmail.com
+Version: 1.00
+----------------
+
+----------------
+Table of Content
+----------------
+1.Preloader Starts
+1.Preloader Starts
+2.Navbar Starts
+3.Banner Starts
+4.About Starts
+5.Service Starts
+6.Portfolio Starts
+7.Feedback Starts
+8.Contact Starts
+9.Footer Starts
+10. Copyright Starts
+11.About Page Starts
+12. Portfolio Page Starts
+13.Feedback Page Starts
+14.Price Page Starts
+15.Contact Page Starts
+*/
+
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+/***************************
+  Common Typography Starts
+****************************/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none !important;
+    color: #222;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow: hidden;
+}
+
+/***************************
+  Common Typography Ends
+****************************/
+/***************************
+  Preloader Starts
+****************************/
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0C0C0C;
+    /* change if the mask should have another color then white */
+    z-index: 99;
+    /* makes sure it stays on top */
+}
+
+#status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    /* centers the loading animation horizontally one the screen */
+    top: 50%;
+    /* centers the loading animation vertically one the screen */
+    background-image: url(../img/pre-loader.gif);
+    /* path to your loading animation */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+    /* is width and height divided by two */
+}
+
+/***************************
+  Preloader Ends
+****************************/
+/******************
+   Navbar Starts
+*******************/
+
+.nav-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    animation: menu .4s;
+}
+
+@keyframes menu {
+    from {
+        top: -56px;
+    }
+
+    to {
+        top: 0
+    }
+}
+
+
+.navbar {
+    background: #1F2336;
+
+}
+.navbar a{
+    position: relative;
+}
+.navbar a span{
+color:
+#fff;
+font-family: "Sacramento", cursive;
+font-size: 32px;
+position: absolute;
+top: 11px;
+left: 31px;
+    
+}
+.navbar a img{
+    width:50px;
+    height:50px;
+}
+.navbar ul .active {
+    color: #daa520;
+}
+
+.navbar ul li {
+    margin-left: 10px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    font-family: "Roboto Slab", serif;
+    font-size: 14px;
+    position: relative;
+    transition: 0.4s all linear;
+    -webkit-transition: 0.4s all linear;
+    -moz-transition: 0.4s all linear;
+    -o-transition: 0.4s all linear;
+}
+
+.navbar ul li a:hover {
+    color: #daa520;
+}
+
+.navbar ul li a:hover:before {
+    width: 35px;
+}
+
+.navbar ul li a:before {
+    content: "";
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    background: #daa520;
+    width: 0;
+    height: 1px;
+    transition: 0.4s all linear;
+    -webkit-transition: 0.4s all linear;
+    -moz-transition: 0.4s all linear;
+    -o-transition: 0.4s all linear;
+}
+
+/******************
+   Navbar Starts
+*******************/
+/*****************
+   Banner Starts
+******************/
+#banner {
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.11)), url(../img/bannerImg.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    padding: 150px 0;
+
+
+}
+
+
+#banner #typed {
+    font-family: "Raleway", sans-serif;
+    font-size: 44px;
+    color: #fff;
+}
+
+#banner #typed strong {
+    font-family: "Raleway", sans-serif;
+    font-size: 44px;
+    color: #daa520;
+}
+
+#banner .typed-cursor {
+    opacity: 0 !important;
+}
+
+#banner .bannerInfo h4 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: #fff;
+}
+
+#banner .bannerInfo h5 {
+    display: none;
+}
+
+#banner .bannerInfo p {
+    width: 50%;
+    color: #fff;
+    font-family: "Roboto Slab", serif;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#banner .bannerInfo .cv {
+    background: #daa520;
+    border-radius: 30px;
+    color: #1F2336;
+    padding: 10px 15px;
+    margin-right: 20px;
+    transition: 0.4s all linear;
+    -webkit-transition: 0.4s all linear;
+    -moz-transition: 0.4s all linear;
+    -o-transition: 0.4s all linear;
+    font-family: "Roboto Slab", serif;
+    font-size: 14px;
+}
+
+#banner .bannerInfo .cv:hover {
+    background: #1F2336;
+    color: #daa520;
+}
+
+#banner .bannerInfo .hire {
+    background: #daa520;
+    border-radius: 30px;
+    color: #1F2336;
+    padding: 10px 15px;
+    transition: 0.4s all linear;
+    -webkit-transition: 0.4s all linear;
+    -moz-transition: 0.4s all linear;
+    -o-transition: 0.4s all linear;
+    font-family: "Roboto Slab", serif;
+    font-size: 14px;
+}
+
+#banner .bannerInfo .hire:hover {
+    background: #1F2336;
+    color: #daa520;
+}
+
+#banner .toAbout {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: jump 1s infinite;
+}
+
+#banner .toAbout i {
+    color: #fff;
+    font-size: 24px;
+}
+
+#banner .toTop a i {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+    line-height: 30px;
+    border: 1px solid #daa520;
+    background: #daa520;
+    color: #1F2336;
+    text-align: center;
+    z-index: 99999;
+}
+
+@keyframes jump {
+    0% {
+        bottom: 85px;
+    }
+
+    50% {
+        bottom: 80px;
+    }
+
+    100% {
+        bottom: 85px;
+    }
+}
+
+/*****************
+   Banner Starts
+******************/
+/******************
+  About Starts
+*******************/
+#about {
+    background: #1F2336;
+    padding: 100px 0 0 0;
+}
+
+#about h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: inherit;
+    position: relative;
+
+}
+
+#about h3:before {
+
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 45%;
+    background:
+        #daa520;
+    width: 5%;
+    height: 3px;
+    clip-path: polygon(0% 0%, 100% 0, 77% 54%, 57% 100%, 0% 100%);
+    transition: .5s all linear;
+}
+
+#about h3:after {
+
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    right: 45%;
+    background:
+        #daa520;
+    width: 7%;
+    height: 3px;
+    clip-path: polygon(69% 0, 100% 1%, 100% 100%, 25% 100%, 46% 52%);
+    transition: .5s all linear;
+
+}
+
+#about .aboutImg {
+    margin-top: 20px;
+    position: relative;
+}
+
+#about .aboutImg .aboutMe {
+    width: 92%;
+    padding: 5px 0;
+    background: #daa520;
+    position: absolute;
+    bottom: -10px;
+    left: 29px;
+    transition: 1s all linear;
+    -webkit-transition: 1s all linear;
+    -moz-transition: 1s all linear;
+    -o-transition: 1s all linear;
+}
+
+#about .aboutImg .aboutMe h5 {
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+    color: #1F2336;
+    font-weight: 700;
+}
+
+#about .aboutImg .aboutMe p {
+    font-family: "Roboto Slab", serif;
+    font-size: 16px;
+    color: #1F2336;
+    font-weight: 400;
+}
+
+#about .allInfo {
+    margin-left: 94px;
+}
+
+#about .allInfo .aboutDetails {
+    margin-top: 45px;
+}
+
+#about .allInfo .aboutDetails h5 {
+    color: #fff;
+    font-family: "Roboto Slab", serif;
+    font-size: 24px;
+    color: #daa520;
+    font-weight: 700;
+}
+
+#about .allInfo .aboutDetails p {
+    margin-top: 30px;
+    color: #fff;
+    font-family: "Roboto Slab", serif;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: -5px;
+}
+
+#about .allInfo .moreDetails ul {
+    margin-top: 15px;
+    margin-right: 30px;
+}
+
+#about .allInfo .moreDetails ul li {
+    margin-top: 10px;
+}
+
+#about .allInfo .moreDetails ul li a {
+    font-family: secondaryFont;
+    font-size: 16px;
+    font-weight: 700;
+    color: #daa520;
+}
+
+#about .allInfo .moreDetails ul li a span {
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#about .allInfo .socialMedia {
+    margin-top: 10px;
+}
+
+#about .allInfo .socialMedia i {
+    color: #fff;
+    margin-right: 20px;
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.4s all linear;
+    -webkit-transition: 0.4s all linear;
+    -moz-transition: 0.4s all linear;
+    -o-transition: 0.4s all linear;
+}
+
+#about .allInfo .socialMedia i:hover {
+    background: #daa520;
+    border: 1px solid transparent;
+    color: #1F2336;
+}
+
+
+
+/******************
+  About Ends
+*******************/
+/*****************
+ Service Starts
+******************/
+#service {
+    background: #1F2336;
+    padding: 100px 0 0 0;
+    padding-bottom: 100px;
+}
+
+#service .serviceTitle h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: inherit;
+    position: relative;
+}
+
+#service .serviceTitle h3:before {
+
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 45%;
+    background:
+        #daa520;
+    width: 5%;
+    height: 3px;
+    clip-path: polygon(0% 0%, 100% 0, 77% 54%, 57% 100%, 0% 100%);
+    transition: .5s all linear;
+}
+
+#service .serviceTitle h3:after {
+
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    right: 45%;
+    background:
+        #daa520;
+    width: 7%;
+    height: 3px;
+    clip-path: polygon(69% 0, 100% 1%, 100% 100%, 25% 100%, 46% 52%);
+    transition: .5s all linear;
+
+}
+
+#service .serviceTitle p {
+    font-family: "Roboto Slab", serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: inherit;
+    position: relative;
+
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+#service .mobile {
+    display: none;
+}
+
+#service .bg1 {
+    background: url(../img/webDesign.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#service .bg2 {
+    background: url(../img/webDev.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#service .bg3 {
+    background: url(../img/bugFix.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#service .bg4 {
+    background: url(../img/creativeDesign.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#service .bg5 {
+    background: url(../img/wordPress.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#service .bg6 {
+    background: url(../img/support.jpg) no-repeat center;
+    background-size: cover;
+}
+
+
+#service .bg7 {
+    background: url(../img/office.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#service .bg8 {
+    background: url(../img/web-computer.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#service .bg9 {
+    background: url(../img/seo.jpg) no-repeat center;
+    background-size: cover;
+}
+
+
+
+#service .webDesign {
+    margin-top: 30px;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+    position: relative;
+}
+
+#service .webDesign:hover:before {
+    opacity: .9;
+}
+
+#service .webDesign h5 {
+    background: #000;
+    color: #fff;
+    padding: 5px;
+}
+
+#service .webDesign .back {
+    margin-top: 120px;
+    border-radius: 4px;
+    transition: 0.4s all linear;
+    -webkit-transition: 0.4s all linear;
+    -moz-transition: 0.4s all linear;
+    -o-transition: 0.4s all linear;
+}
+
+#service .webDesign:hover .back {
+    opacity: 0;
+}
+
+#service .webDesign:hover .webDEsignDetails {
+    transform: scale(1);
+}
+
+#service .webDesign:before {
+    content: "";
+    position: absolute;
+    background: #daa520;
+    left: 0;
+    right: 0;
+    height: 100%;
+    opacity: 0.2;
+    transition: 1s all linear;
+    -webkit-transition: 1s all linear;
+    -moz-transition: 1s all linear;
+    -o-transition: 1s all linear;
+}
+
+#service .webDesign .webDEsignDetails {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    height: 100%;
+    background: rgba(31, 35, 54, 0.6);
+    transform: scale(0);
+    z-index: 9999;
+    transition: 0.5s all linear;
+    -webkit-transition: 0.5s all linear;
+    -moz-transition: 0.5s all linear;
+    -o-transition: 0.5s all linear;
+}
+
+#service .webDesign .webDEsignDetails:hover i {
+    color: #daa520;
+}
+
+#service .webDesign .webDEsignDetails i {
+    padding-bottom: 15px;
+    font-size: 26px;
+    color: #fff;
+    margin-top: 60px;
+    transition: 0.5s all linear;
+    -webkit-transition: 0.5s all linear;
+    -moz-transition: 0.5s all linear;
+    -o-transition: 0.5s all linear;
+}
+
+#service .webDesign .webDEsignDetails h5 {
+    padding-bottom: 10px;
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #fff;
+}
+
+#service .webDesign .webDEsignDetails p {
+    font-family: "Roboto Slab", serif;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+}
+
+/*****************
+ Service Ends
+******************/
+/*******************
+ Portfolio Starts
+********************/
+#portfolio {
+    background: #1F2336;
+}
+
+#portfolio .portfolioTitle h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: inherit;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+#portfolio .portfolioTitle h3:before {
+
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 45%;
+    background:
+        #daa520;
+    width: 5%;
+    height: 3px;
+    clip-path: polygon(0% 0%, 100% 0, 77% 54%, 57% 100%, 0% 100%);
+    transition: .5s all linear;
+}
+
+#portfolio .portfolioTitle h3:after {
+
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    right: 45%;
+    background:
+        #daa520;
+    width: 7%;
+    height: 3px;
+    clip-path: polygon(69% 0, 100% 1%, 100% 100%, 25% 100%, 46% 52%);
+    transition: .5s all linear;
+
+}
+
+#portfolio .portfolioTitle p {
+    font-family: "Roboto Slab", serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: inherit;
+    position: relative;
+
+    display: inline-block;
+}
+
+#portfolio .portfolioTitle ul {
+    margin-top: 35px;
+    padding-bottom: 20px;
+}
+
+#portfolio .portfolioTitle ul li {
+    display: inline-block;
+    color: #daa520;
+    font-family: "Roboto Slab", serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#portfolio .mix {
+    position: relative;
+    padding-bottom: 15px;
+}
+
+figure.snip1104 {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 220px;
+    width: 100%;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+figure.snip1104 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+figure.snip1104 img {
+    max-width: 100%;
+    position: relative;
+    opacity: 0.4;
+}
+
+figure.snip1104 figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+figure.snip1104 h2 {
+    position: absolute;
+    left: 40px;
+    right: 40px;
+    display: inline-block;
+    background: #000000;
+    -webkit-transform: skew(-10deg) rotate(-10deg) translate(0, -50%);
+    transform: skew(-10deg) rotate(-10deg) translate(0, -50%);
+    padding: 12px 5px;
+    margin: 0;
+    top: 50%;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+figure.snip1104 h2 span {
+    font-weight: 800;
+}
+
+figure.snip1104:before {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+    background: #ffffff;
+    position: absolute;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transform: rotate(110deg) translateY(-50%);
+    transform: rotate(110deg) translateY(-50%);
+}
+
+figure.snip1104 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+figure.snip1104.blue {
+    background: #123851;
+}
+
+figure.snip1104.blue h2 {
+    background: #0a212f;
+}
+
+figure.snip1104:hover img,
+figure.snip1104.hover img {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+figure.snip1104:hover h2,
+figure.snip1104.hover h2 {
+    -webkit-transform: skew(-10deg) rotate(-10deg) translate(-150%, -50%);
+    transform: skew(-10deg) rotate(-10deg) translate(-150%, -50%);
+}
+
+figure.snip1104:hover:before,
+figure.snip1104.hover:before {
+    -webkit-transform: rotate(110deg) translateY(-150%);
+    transform: rotate(110deg) translateY(-150%);
+}
+
+figure a i {
+    margin-top: 100px;
+    margin-right: 20px;
+    color: #000;
+    opacity: 0;
+    transition: .3s all linear;
+    -webkit-transition: .3s all linear;
+    -moz-transition: .3s all linear;
+    -o-transition: .3s all linear;
+}
+
+figure.snip1104:hover a i {
+    opacity: 1;
+}
+
+#portfolio .mix:hover .overlay {
+    opacity: 1;
+    transform: scale(0.8);
+}
+
+#portfolio .mix .overlay {
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    transform: scale(1);
+    opacity: 0;
+    transition: 0.5s all linear;
+    -webkit-transition: 0.5s all linear;
+    -moz-transition: 0.5s all linear;
+    -o-transition: 0.5s all linear;
+}
+
+#portfolio .mix .overlay i {
+    color: #1F2336;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    transition: 0.4s all linear;
+    -webkit-transition: 0.4s all linear;
+    -moz-transition: 0.4s all linear;
+    -o-transition: 0.4s all linear;
+}
+
+#portfolio .mix .overlay i:hover {
+    color: #daa520;
+}
+
+#portfolio .hireMe {
+    text-align: center;
+    margin-top: 60px;
+    background: url(../img/hireME.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+    position: relative;
+}
+
+#portfolio .hireMe .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(31, 35, 54, 0.5);
+}
+
+#portfolio .hireMe .overlay h3 {
+    font-family: "Roboto Slab", serif;
+    color: #fff;
+    margin-top: 115px;
+    font-size: 32px;
+}
+
+#portfolio .hireMe .overlay a {
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #daa520;
+    border-radius: 30px;
+    color: #1F2336;
+    padding: 10px 20px;
+    transition: 0.4s all linear;
+    -webkit-transition: 0.4s all linear;
+    -moz-transition: 0.4s all linear;
+    -o-transition: 0.4s all linear;
+    font-family: "Roboto Slab", serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#portfolio .hireMe .overlay a:hover {
+    background: #1F2336;
+    color: #daa520;
+}
+
+/*******************
+ Portfolio Ends
+********************/
+
+/****************
+  Pricing Starts
+******************/
+
+#pricing {
+    background: rgba(31, 35, 54, .9);
+    padding-top: 80px;
+}
+
+#pricing .priceTitle h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: inherit;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+#pricing .priceTitle h3:before {
+
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 45%;
+    background:
+        #daa520;
+    width: 5%;
+    height: 3px;
+    clip-path: polygon(0% 0%, 100% 0, 77% 54%, 57% 100%, 0% 100%);
+    transition: .5s all linear;
+}
+
+#pricing .priceTitle h3:after {
+
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    right: 45%;
+    background: #daa520;
+    width: 7%;
+    height: 3px;
+    clip-path: polygon(69% 0, 100% 1%, 100% 100%, 25% 100%, 46% 52%);
+    transition: .5s all linear;
+
+}
+
+#pricing .priceTitle p {
+    font-family: "Roboto Slab", serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: inherit;
+    position: relative;
+    display: inline-block;
+}
+
+#pricing .priceDetails {
+    padding: 50px 0;
+    transform: scale(.9);
+    transition: .3s all linear;
+    -webkit-transition: .3s all linear;
+    -moz-transition: .3s all linear;
+    -o-transition: .3s all linear;
+
+}
+
+#pricing .priceDetails:hover {
+    transform: scale(1);
+}
+
+#pricing .priceDetails .priceTag {
+    width: 100%;
+    background: #1f2336;
+    padding: 10px 0;
+    border-radius: 10px 10px 0 0;
+    -webkit-transition: .3s all linear;
+    -moz-transition: .3s all linear;
+    -o-transition: .3s all linear;
+    transition: .3s all linear;
+}
+
+#pricing .priceDetails:hover .priceTag {
+    background: #ffff;
+}
+
+
+
+#pricing .priceDetails .priceTag h3 {
+    font-size: 26px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    -webkit-transition: .3s all linear;
+    -moz-transition: .3s all linear;
+    -o-transition: .3s all linear;
+    transition: .3s all linear;
+}
+
+#pricing .priceDetails:hover .priceTag h3 {
+    color: #1f2336;
+}
+
+#pricing .priceDetails .package {
+    width: 100%;
+    background:
+        /*rgba(218, 165, 32, .9); */
+        #1f2336;
+    padding: 30px 0;
+    border-top: 10px solid #daa520;
+}
+
+
+#pricing .priceDetails .package .packageBorder {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+    transition: .3s all linear;
+    -webkit-transition: .3s all linear;
+    -moz-transition: .3s all linear;
+    -o-transition: .3s all linear;
+
+}
+
+
+#pricing .priceDetails .package .packageBorder h4 {
+    font-size: 32px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    color: #fff;
+    padding: 10px 5px 0 5px;
+
+}
+
+
+#pricing .priceDetails .package .packageBorder span {
+    font-size: 22px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+#pricing .priceDetails .package .packageBorder h3 {
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+#pricing .priceDetails .packageDetails {
+    width: 100%;
+    background: #1f2336;
+    padding: 30px 0;
+    border-radius: 0 0 10px 10px;
+    border-top: 10px solid #daa520;
+    text-align: center;
+    transition: .3s all linear;
+    -webkit-transition: .3s all linear;
+    -moz-transition: .3s all linear;
+    -o-transition: .3s all linear;
+}
+
+#pricing .priceDetails:hover .packageDetails {
+    border-top: 10px solid #fff;
+}
+
+#pricing .priceDetails .packageDetails ul {
+    text-align: left;
+    padding-bottom: 20px;
+    margin-left: 80px;
+}
+
+#pricing .priceDetails .packageDetails ul li {}
+
+#pricing .priceDetails .packageDetails ul li a {
+    color: #fff;
+    font-family: "Roboto Slab", serif;
+    font-size: 14px;
+    transition: .3s all linear;
+    -webkit-transition: .3s all linear;
+    -moz-transition: .3s all linear;
+    -o-transition: .3s all linear;
+
+}
+
+#pricing .priceDetails .packageDetails ul li .yes {
+    margin-right: 10px;
+    color: #82C91E;
+    font-size: 14px;
+}
+
+#pricing .priceDetails .packageDetails ul li .no {
+    margin-right: 10px;
+    color: #f82626;
+    font-size: 14px;
+}
+
+#pricing .priceDetails .packageDetails .order {
+    background: #daa520;
+    border-radius: 30px;
+    color: #1F2336;
+    padding: 10px 15px;
+    margin-right: 20px;
+    transition: 0.4s all linear;
+    -webkit-transition: 0.4s all linear;
+    -moz-transition: 0.4s all linear;
+    -o-transition: 0.4s all linear;
+    font-family: "Roboto Slab", serif;
+    font-size: 14px;
+    transition: .3s all linear;
+    -webkit-transition: .3s all linear;
+    -moz-transition: .3s all linear;
+    -o-transition: .3s all linear;
+}
+
+#pricing .priceDetails:hover .packageDetails .order {
+    background: #ffff;
+}
+
+
+
+/****************
+  Pricing Ends
+******************/
+
+
+/*******************
+ Feedback Starts
+********************/
+#feedback {
+    background: #1F2336;
+    padding: 100px 0 0 0;
+    margin-top: -49px;
+}
+
+#feedback .feedbackTitle h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: inherit;
+    position: relative;
+}
+
+#feedback .feedbackTitle h3:before {
+
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 45%;
+    background:
+        #daa520;
+    width: 5%;
+    height: 3px;
+    clip-path: polygon(0% 0%, 100% 0, 77% 54%, 57% 100%, 0% 100%);
+    transition: .5s all linear;
+}
+
+#feedback .feedbackTitle h3:after {
+
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    right: 45%;
+    background:
+        #daa520;
+    width: 7%;
+    height: 3px;
+    clip-path: polygon(69% 0, 100% 1%, 100% 100%, 25% 100%, 46% 52%);
+    transition: .5s all linear;
+
+}
+
+#feedback .feedbackTitle p {
+    font-family: "Roboto Slab", serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: inherit;
+    position: relative;
+    display: inline-block;
+}
+
+#feedback .feedbackBg {
+    background: #1F2336;
+    width: 100%;
+    padding: 50px 0 0 0;
+}
+
+#feedback .feedbackBg .review {
+    outline: 0;
+    padding: 25px 0;
+}
+
+#feedback .feedbackSlider .slick-list {
+    margin-top: -55px;
+}
+
+#feedback .feedbackBg .review img {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+
+#feedback .feedbackBg .review h3 {
+    margin-top: 15px;
+    font-family: "Sacramento", cursive;
+    color: #daa520;
+    font-size: 40px;
+}
+
+#feedback .feedbackBg .review p {
+    font-family: "Roboto Slab", serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    padding: 0 210px;
+}
+
+#feedback .feedbackBg .review i {
+    font-size: 14px;
+    color: #daa520;
+}
+
+
+/*******************
+ Feedback Starts
+********************/
+/*****************
+  Contact Starts
+******************/
+#contact {
+    background: rgba(31, 35, 54, .9);
+    padding: 50px 0 60px 0;
+}
+
+#contact .contactTitle h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: inherit;
+    position: relative;
+}
+
+#contact .contactTitle h3:before {
+
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 45%;
+    background:
+        #daa520;
+    width: 5%;
+    height: 3px;
+    clip-path: polygon(0% 0%, 100% 0, 77% 54%, 57% 100%, 0% 100%);
+    transition: .5s all linear;
+}
+
+#contact .contactTitle h3:after {
+
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    right: 45%;
+    background:
+        #daa520;
+    width: 7%;
+    height: 3px;
+    clip-path: polygon(69% 0, 100% 1%, 100% 100%, 25% 100%, 46% 52%);
+    transition: .5s all linear;
+
+}
+
+#contact .contactTitle p {
+    font-family: "Roboto Slab", serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: inherit;
+    position: relative;
+
+    display: inline-block;
+}
+
+#contact .contactForm {
+    margin-top: 35px;
+}
+
+#contact .contactForm input {
+    border: none;
+    background: none;
+    border-bottom: 1px solid #daa520;
+    outline: 0;
+    padding-left: 10px;
+}
+
+#contact .contactForm input:focus {
+    color: #daa520;
+}
+
+#contact .contactForm input::placeholder {
+    color: #fff;
+    font-family: "Roboto Slab", serif;
+    opacity: 1;
+}
+
+#contact .contactMessage {
+    margin-top: 30px;
+}
+
+#contact .contactMessage textarea {
+    background: none;
+    border: 1px solid #daa520;
+    color: #daa520;
+    font-family: "Roboto Slab", serif;
+    outline-color: #daa520;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 40px;
+    width: 100%;
+    height: 300px;
+}
+
+#contact .contactMessage textarea:focus {
+    color: #daa520;
+}
+
+#contact .contactMessage a {
+    background: #daa520;
+    border-radius: 30px;
+    color: #1F2336;
+    padding: 10px 20px;
+    transition: 0.4s all linear;
+    -webkit-transition: 0.4s all linear;
+    -moz-transition: 0.4s all linear;
+    -o-transition: 0.4s all linear;
+    font-family: "Roboto Slab", serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+#contact .contactMessage a:hover {
+    background: #fff;
+}
+
+#contact .socialMedia {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#contact .socialMedia i {
+    color: #fff;
+    margin-right: 20px;
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 22px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.4s all linear;
+    -webkit-transition: 0.4s all linear;
+    -moz-transition: 0.4s all linear;
+    -o-transition: 0.4s all linear;
+}
+
+#contact .socialMedia i:hover {
+    background: #daa520;
+    border: 1px solid transparent;
+    color: #1F2336;
+}
+
+#contact .socialMedia i:nth-child(1) {
+    margin-left: 20px;
+}
+
+/*****************
+  Contact Ends
+******************/
+
+
+
+
+/**************
+   footer-top part
+*************/
+
+
+
+footer.footer {
+    background: #1F2336 none repeat scroll 0 0;
+}
+
+.footer-sec {
+    padding-top: 100px;
+    position: relative;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+.footer-intro-box {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.footer-intro {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-intro span {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    display: inline;
+    position: relative;
+    z-index: 2;
+    padding: 0px 30px;
+    display: inline-block;
+}
+
+.footer-intro::before {
+    background: #daa520 none repeat scroll 0 0;
+    content: " ";
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: skewX(61deg);
+    width: 5000px;
+    z-index: -1;
+}
+
+.footer-sec h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+
+}
+
+.footer-sec p {
+    color: #fff;
+    font-family: "Roboto Slab", serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.footer-wedget-one img {
+    margin-top: 20px;
+}
+
+.footer-wedget-one ul {
+    margin-top: 15px;
+}
+
+.footer-wedget-one form {
+    background: #525459 none repeat scroll 0 0;
+    margin-top: 35px;
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-right: 5px;
+}
+
+.footer-wedget-one input[type="email"] {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #fff;
+    color: #292929;
+    padding: 10px 58px 10px 10px;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+.footer-wedget-one .submit_btn {
+    background: #daa520;
+    color: #fff;
+    padding: 11px 20px;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.footer-wedget-one .submit_btn i {
+    border: none;
+    margin-right: 0;
+    color: #212529;
+}
+
+.footer-wedget-three li i {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.ft-menu ul {
+    padding: 0px 20px;
+}
+
+.ft-menu h2 {
+    display: inline-block;
+    text-align: left;
+}
+
+.footer-wedget-three li {
+    color: #ccc;
+    font-size: 14px;
+    padding: 10px
+}
+
+.footer-wedget-two li {
+    display: inline-block;
+}
+
+
+
+.footer-widget-menu li a {
+    color: #f4f4f4;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    display: inline-block;
+    font-family: "Roboto Slab", serif;
+}
+
+.footer-widget-menu li a:hover {
+    color: #daa520;
+    transition: all 0.4s ease 0s;
+}
+
+.footer-bottom-sec {
+    padding: 15px 0;
+    border-top: 1px solid #10385c;
+}
+
+.footer-social {
+        margin-top: 15px;
+}
+
+.footer-social ul li {
+    display: inline-block;
+}
+
+.footer-social ul li i {
+    color: #1F2336;
+    float: left;
+    font-size: 22px;
+    line-height: 40px;
+    margin-right: 9px;
+    text-align: center;
+    width: 40px;
+    height: 40x;
+    transition: all 0.4s ease-in-out 0s;
+    border-radius: 4px;
+    background: #daa520;
+}
+
+.footer-social ul li i:hover {
+    background: #1F2336;
+    color: #fff;
+}
+
+.copy-right {
+    margin-top: 8px;
+}
+
+.footer-bottom-sec p {
+    color: #f4f4f4;
+    margin: 0;
+    text-align: left;
+    font-family: "Roboto Slab", serif;
+}
+
+
+.footer-recent-inner .media {
+    padding-bottom: 10px;
+}
+
+
+.footer-recent-inner h2 {
+    margin-bottom: 4px;
+    padding-bottom: 0;
+    text-transform: capitalize;
+    font-family: "Roboto Slab", serif;
+}
+
+.footer-recent-inner h2 a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Roboto Slab", serif;
+}
+
+.footer-recent-inner h2 a:hover {
+    color: #daa520;
+    transition: all 0.5s ease-out 0s;
+}
+
+.footer-recent-inner span {
+    color: #f4f4f4;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+/****************
+ Footer-top End
+*****************/
+
+/****************
+ Copyright Starts
+*****************/
+#copyrightSection {
+    background: #222;
+    padding: 10px 0 !important;
+}
+
+#copyrightSection p {
+    font-family: "Raleway", sans-serif;
+    color: #daa520;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/****************
+ Copyright Ends
+*****************/
+
+
+/********************
+  About page Starts
+********************/
+
+#aboutpage {
+    background: #1F2336;
+    padding: 100px 0 100px 0;
+}
+
+#aboutpage .aboutTitle h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: inherit;
+}
+
+#aboutpage .aboutTitle h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: inherit;
+    position: relative;
+}
+
+#aboutpage .aboutTitle h3:before {
+
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 45%;
+    background:
+        #daa520;
+    width: 5%;
+    height: 3px;
+    clip-path: polygon(0% 0%, 100% 0, 77% 54%, 57% 100%, 0% 100%);
+    transition: .5s all linear;
+}
+
+#aboutpage .aboutTitle h3:after {
+
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    right: 45%;
+    background:
+        #daa520;
+    width: 7%;
+    height: 3px;
+    clip-path: polygon(69% 0, 100% 1%, 100% 100%, 25% 100%, 46% 52%);
+    transition: .5s all linear;
+
+}
+
+
+#aboutpage .aboutImg {
+    margin-top: 35px;
+    position: relative;
+    text-align: center;
+}
+
+#aboutpage .aboutImg .aboutMe {
+    width: 61%;
+    padding: 5px 0;
+    background: #daa520;
+    position: absolute;
+    bottom: -10px;
+    left: 106px;
+    transition: 1s all linear;
+    -webkit-transition: 1s all linear;
+    -moz-transition: 1s all linear;
+    -o-transition: 1s all linear;
+}
+
+#aboutpage .aboutImg .aboutMe h5 {
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+    color: #1F2336;
+    font-weight: 700;
+}
+
+#aboutpage .aboutImg .aboutMe p {
+    font-family: "Roboto Slab", serif;
+    font-size: 16px;
+    color: #1F2336;
+    font-weight: 400;
+}
+
+
+
+#aboutpage .allInfo .aboutDetails {
+    margin-top: 42px;
+}
+
+#aboutpage .allInfo .aboutDetails h5 {
+    color: #fff;
+    font-family: "Roboto Slab", serif;
+    font-size: 24px;
+    color: #daa520;
+    font-weight: 700;
+    text-align: center;
+}
+
+#aboutpage .allInfo .aboutDetails p {
+    margin-top: 17px;
+    color: #fff;
+    font-family: "Roboto Slab", serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+#aboutpage .allInfo .moreDetails {}
+
+#aboutpage .allInfo .moreDetails ul {
+    margin-top: -15px;
+    margin-right: 30px;
+}
+
+#aboutpage .allInfo .moreDetails ul li {
+    margin-top: 10px;
+}
+
+#aboutpage .allInfo .moreDetails ul li a {
+    font-family: secondaryFont;
+    font-size: 16px;
+    font-weight: 700;
+    color: #daa520;
+}
+
+#aboutpage .allInfo .moreDetails ul li a span {
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#aboutpage .allInfo .socialMedia {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#aboutpage .allInfo .socialMedia i {
+    color: #fff;
+    margin-right: 20px;
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.4s all linear;
+    -webkit-transition: 0.4s all linear;
+    -moz-transition: 0.4s all linear;
+    -o-transition: 0.4s all linear;
+}
+
+#aboutpage .allInfo .socialMedia i:hover {
+    background: #daa520;
+    border: 1px solid transparent;
+    color: #1F2336;
+}
+
+#aboutpage .allInfo .socialMedia i:nth-child(1) {
+    margin-left: 20px;
+}
+
+/********************
+  About page Ends
+********************/
+
+/**********************
+ Portfolio Page Starts
+***********************/
+
+#portfolio-1 {
+    padding-top: 100px;
+    background: #1F2336;
+    padding-bottom: 70px;
+
+}
+
+#portfolio-1 .portfolioTitle h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: inherit;
+    padding-bottom: 5px;
+    position: relative;
+
+}
+
+#portfolio-1 .portfolioTitle h3:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 45%;
+    background:
+        #daa520;
+    width: 5%;
+    height: 3px;
+    clip-path: polygon(0% 0%, 100% 0, 77% 54%, 57% 100%, 0% 100%);
+    transition: .5s all linear;
+}
+
+#portfolio-1 .portfolioTitle h3:after {
+
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    right: 45%;
+    background: #daa520;
+    width: 7%;
+    height: 3px;
+    clip-path: polygon(69% 0, 100% 1%, 100% 100%, 25% 100%, 46% 52%);
+    transition: .5s all linear;
+
+}
+
+
+#portfolio-1 .portfolioTitle p {
+    font-family: "Roboto Slab", serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: inherit;
+    position: relative;
+    display: inline-block;
+}
+
+
+
+
+#portfolio-1 .portfolioTitle ul {
+    margin-top: 35px;
+    padding-bottom: 20px;
+}
+
+#portfolio-1 .portfolioTitle ul li {
+    display: inline-block;
+    color: #daa520;
+    font-family: "Roboto Slab", serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#portfolio-1 .mix {
+    position: relative;
+    padding-bottom: 15px;
+}
+
+#portfolio-1 .mix:hover .overlay {
+    opacity: 1;
+    transform: scale(0.8);
+}
+
+#portfolio-1 .mix .overlay {
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    transform: scale(1);
+    opacity: 0;
+    transition: 0.5s all linear;
+    -webkit-transition: 0.5s all linear;
+    -moz-transition: 0.5s all linear;
+    -o-transition: 0.5s all linear;
+}
+
+#portfolio-1 .mix .overlay i {
+    color: #1F2336;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    transition: 0.4s all linear;
+    -webkit-transition: 0.4s all linear;
+    -moz-transition: 0.4s all linear;
+    -o-transition: 0.4s all linear;
+}
+
+#portfolio-1 .mix .overlay i:hover {
+    color: #daa520;
+}
+
+#portfolio-1 .hireMe {
+    text-align: center;
+    margin-top: 60px;
+    background: url(../img/hireME.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+    position: relative;
+}
+
+#portfolio-1 .hireMe .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(31, 35, 54, 0.3);
+}
+
+#portfolio-1 .hireMe .overlay h3 {
+    font-family: "Roboto Slab", serif;
+    color: #fff;
+    margin-top: 115px;
+    font-size: 32px;
+}
+
+#portfolio-1 .hireMe .overlay a {
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #daa520;
+    border-radius: 10px;
+    color: #1F2336;
+    padding: 10px 20px;
+    transition: 0.4s all linear;
+    -webkit-transition: 0.4s all linear;
+    -moz-transition: 0.4s all linear;
+    -o-transition: 0.4s all linear;
+    font-family: "Roboto Slab", serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#portfolio-1 .hireMe .overlay a:hover {
+    background: #1F2336;
+    color: #daa520;
+}
+
+/*******************
+ Portfolio Page Ends
+********************/
+
+/*******************
+ Feedback Page Starts
+********************/
+
+#feedback-2 {
+    background: #1F2336;
+    padding: 100px 0 0 0;
+}
+
+#feedback-2 .feedbackTitle h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: inherit;
+    position: relative;
+}
+
+#feedback-2 .feedbackTitle h3:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 45%;
+    background:
+        #daa520;
+    width: 5%;
+    height: 3px;
+    clip-path: polygon(0% 0%, 100% 0, 77% 54%, 57% 100%, 0% 100%);
+    transition: .5s all linear;
+}
+
+#feedback-2 .feedbackTitle h3:after {
+
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    right: 45%;
+    background: #daa520;
+    width: 7%;
+    height: 3px;
+    clip-path: polygon(69% 0, 100% 1%, 100% 100%, 25% 100%, 46% 52%);
+    transition: .5s all linear;
+
+}
+
+
+#feedback-2 .feedbackTitle p {
+    font-family: "Roboto Slab", serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: inherit;
+    position: relative;
+    display: inline-block;
+}
+
+#feedback-2 .feedbackBg {
+    background: #1F2336;
+    width: 100%;
+    padding: 10px 0;
+    padding-bottom: 100px;
+}
+
+#feedback-2 .feedbackBg .review {
+    outline: 0;
+    padding: 25px 0;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+#feedback-2 .feedbackSlider .slick-list {
+    margin-top: -55px;
+}
+
+#feedback-2 .feedbackBg .review img {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+
+#feedback-2 .feedbackBg .review h3 {
+    margin-top: 15px;
+    font-family: "Sacramento", cursive;
+    color: #daa520;
+    font-size: 40px;
+}
+
+#feedback-2 .feedbackBg .review p {
+    font-family: "Roboto Slab", serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    padding: 10px 10px 0px 10px;
+    width: 100%;
+    padding-left: 50px;
+    margin-left: -20px;
+}
+
+
+#feedback-2 .feedbackBg .review i {
+    font-size: 14px;
+    color: #daa520;
+}
+
+
+
+/*******************
+ Feedback Page Ends
+********************/
+
+
+/*************************
+  Price Page Starts
+*************************/
+
+
+#pricing .price-details-info h2 {
+    font-size: 24px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: -10px;
+    margin-top: 83px;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 132px;
+    text-transform: uppercase;
+}
+
+#pricing .price-details-info .information {
+    border: 1px solid #fff;
+    background: #1F2336;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+#pricing .price-details-info .information h5 {
+    font-size: 22px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+#pricing .price-details-info .information p {
+    font-size: 14px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    color: #fff;
+    line-height: 24px;
+}
+
+/*************************
+  Price Page Ends
+*************************/
+
+
+/*********************
+ Contact Page Starts
+**********************/
+#contact1 {
+    background: rgba(31, 35, 54, .9);
+    padding: 100px 0;
+}
+
+#contact1 .contactTitle h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: inherit;
+    position: relative;
+}
+
+#contact1 .contactTitle h3:before {
+
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 45%;
+    background: #daa520;
+    width: 5%;
+    height: 3px;
+    clip-path: polygon(0% 0%, 100% 0, 77% 54%, 57% 100%, 0% 100%);
+    transition: .5s all linear;
+}
+
+#contact1 .contactTitle h3:after {
+
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    right: 45%;
+    background:
+        #daa520;
+    width: 7%;
+    height: 3px;
+    clip-path: polygon(69% 0, 100% 1%, 100% 100%, 25% 100%, 46% 52%);
+    transition: .5s all linear;
+
+}
+
+#contact1 .contactTitle p {
+    font-family: "Roboto Slab", serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: inherit;
+    position: relative;
+
+    display: inline-block;
+}
+
+#contact1 .cDetails {
+    background: #1f2336;
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+#contact1 .cDetails h4 {
+    color: #fff;
+    font-size: "Raleway", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+}
+
+#contact1 .cDetails a {
+    background: #daa520;
+    border-radius: 30px;
+    color: #1F2336;
+    padding: 10px 20px;
+    transition: 0.4s all linear;
+    -webkit-transition: 0.4s all linear;
+    -moz-transition: 0.4s all linear;
+    -o-transition: 0.4s all linear;
+    font-family: "Roboto Slab", serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+#contact1 .cDetails a:hover {
+    background: #fff;
+}
+
+#contact1 .cLocationTitle {
+    margin-top: 50px;
+    background: #1f2336;
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 50px;
+    border-radius: 5px 5px 0 0;
+
+}
+
+#contact1 .cLocationTitle h4 {
+    color: #fff;
+    font-size: "Raleway", sans-serif;
+    text-transform: uppercase;
+}
+
+#contact1 .cLocation {
+    width: 100%;
+}
+
+#contact1 .cLocation iframe {
+    border-radius: 0 0 5px 5px;
+}
+
+/*********************
+ Contact Page Ends
+**********************/

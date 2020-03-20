@@ -1,0 +1,122 @@
+/*****************
+  Contact Starts
+******************/
+
+#contact {
+    background: $primaryColor;
+    padding: 100px 0 60px 0;
+
+    .contactTitle {
+
+        h3 {
+            font-family: $primaryFont;
+            font-size: 32px;
+            font-weight: 700;
+            color: $white;
+            text-transform: inherit;
+        }
+
+        p {
+            font-family: $secondaryFont;
+            font-size: 16px;
+            font-weight: 400;
+            color: $white;
+            text-transform: inherit;
+            position: relative;
+            border-bottom: 2px solid $secondaryColor;
+            display: inline-block;
+        }
+    }
+
+    .contactForm {
+        margin-top: 60px;
+
+        input {
+            border: none;
+            background: none;
+            border-bottom: 1px solid $secondaryColor;
+            outline: 0;
+            padding-left: 10px;
+
+            &:focus {
+                color: $secondaryColor;
+            }
+
+            &::placeholder {
+                color: $secondaryColor;
+                font-family: $secondaryFont;
+                opacity: 1;
+            }
+        }
+    }
+
+    .contactMessage {
+        margin-top: 30px;
+
+        textarea {
+            background: none;
+            border: 1px solid $secondaryColor;
+            color: $secondaryColor;
+            font-family: $secondaryFont;
+            outline-color: $secondaryColor;
+            padding-left: 10px;
+            padding-top: 10px;
+            margin-bottom: 15px;
+
+            &:focus {
+                color: $secondaryColor;
+            }
+        }
+
+        a {
+            @include button ($secondaryColor, 10px, $primaryColor, 10px 20px);
+            @include transition (.4s);
+            font-family: $secondaryFont;
+            font-size: 14px;
+            font-weight: 700;
+            margin: 0 auto;
+
+            &:hover {
+                background: $white;
+            }
+        }
+    }
+
+    .socialMedia {
+        margin-top: 30px;
+
+        i {
+            color: $white;
+            margin-right: 20px;
+            border: 1px solid #fff;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 22px;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 3px;
+            @include transition (.4s);
+
+            &:hover {
+                background: $secondaryColor;
+                border: 1px solid transparent;
+                color: $primaryColor;
+            }
+
+            &:nth-child(1) {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+/*****************
+  Contact Ends
+******************/

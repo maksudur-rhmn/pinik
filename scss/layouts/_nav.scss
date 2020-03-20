@@ -1,0 +1,69 @@
+/******************
+   Navbar Starts
+*******************/
+
+.navbar {
+    background: $primaryColor;
+background: #1F2336;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999999999999999999999999999999999;
+    a {
+        color: $secondaryColor;
+        font-family: $signatureFont;
+        font-size: 32px;
+    }
+
+    ul {
+        .active{
+            a{
+                color: $secondaryColor;
+            }
+            }
+        li {
+            margin-left: 10px;
+            
+            a {
+                color: $white;
+                font-family: $secondaryFont;
+                font-size: 14px;
+                
+                position: relative;
+                @include transition (.4s);
+                
+                &:hover{
+                    color: $secondaryColor;
+                }
+                &:hover:before{
+                    width:35px;
+                }
+                &:before {
+                    content: "";
+                    position: absolute;
+                    bottom: 6px;
+                    left: 0;
+                    background: #daa520;
+                    width: 0;
+                    height: 1px;
+                    @include transition (.4s);
+                  
+                } 
+                
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/******************
+   Navbar Starts
+*******************/

@@ -1,0 +1,12 @@
+ (@mixin transition ($time) {
+      transition: $time all linear;
+    -webkit-transition: $time all linear;
+    -moz-transition: $time all linear;
+    -o-transition: $time all linear;
+}
+@mixin button ($bg, $borderRadius, $color, $padding){
+    background: $bg;
+    border-radius : $borderRadius;
+    color: $color;
+    padding: $padding;
+}

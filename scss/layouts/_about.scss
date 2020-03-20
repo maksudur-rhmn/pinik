@@ -1,0 +1,151 @@
+/******************
+  About Starts
+*******************/
+
+#about {
+    background: $primaryColor;
+    padding: 100px 0;
+
+    h3 {
+        font-family: $primaryFont;
+        font-size: 32px;
+        font-weight: 700;
+        color: $white;
+        text-transform: inherit;
+    }
+
+    .aboutImg {
+        margin-top: 60px;
+        position: relative;
+
+        .aboutMe {
+            width: 92%;
+            padding: 5px 0;
+            background: #daa520;
+            position: absolute;
+            bottom: -10px;
+            left: 29px;
+            @include transition (1s);
+
+            h5 {
+                font-family: $primaryFont;
+                font-size: 24px;
+                color: $primaryColor;
+                font-weight: 700;
+            }
+
+            p {
+                font-family: $secondaryFont;
+                font-size: 16px;
+                color: $primaryColor;
+                font-weight: 400;
+            }
+
+            &:hover {
+                background: rgba(218, 165, 32, 0.6);
+                bottom: 42px;
+                border-bottom: 5px solid $primaryColor;
+
+            }
+
+            &:hover .aboutMeInner {
+                bottom: -140px;
+                opacity: 1;
+
+            }
+
+            .aboutMeInner {
+                position: absolute;
+                bottom: 0px;
+                left: 0;
+                width: 100%;
+                padding: 30px 0;
+                background: rgba(218, 165, 32, 0.6);
+                z-index: 99999;
+                opacity: 0;
+                @include transition (1s);
+            }
+        }
+
+    }
+
+    .allInfo {
+        margin-left: 94px;
+
+        .aboutDetails {
+            margin-top: 146px;
+
+            h5 {
+                color: $white;
+                font-family: $secondaryFont;
+                font-size: 24px;
+                color: $secondaryColor;
+                font-weight: 700;
+            }
+
+            p {
+                margin-top: 30px;
+                color: $white;
+                font-family: $secondaryFont;
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+
+        .moreDetails {
+            ul {
+                margin-top: 15px;
+                margin-right: 30px;
+
+                li {
+                    margin-top: 10px;
+
+                    a {
+                        font-family: secondaryFont;
+                        font-size: 16px;
+                        font-weight: 700;
+
+                        color: $secondaryColor;
+
+                        span {
+                            color: $white;
+                            font-weight: 400;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .socialMedia {
+            margin-top: 10px;
+
+            i {
+                color: $white;
+                margin-right: 20px;
+                border: 1px solid #fff;
+                width: 25px;
+                height: 25px;
+                line-height: 25px;
+                text-align: center;
+                cursor: pointer;
+                border-radius: 3px;
+                @include transition (.4s);
+
+                &:hover {
+                    background: $secondaryColor;
+                    border: 1px solid transparent;
+                    color: $primaryColor;
+                }
+
+                &:nth-child(1) {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+
+/******************
+  About Ends
+*******************/

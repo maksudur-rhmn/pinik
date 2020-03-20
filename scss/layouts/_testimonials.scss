@@ -1,0 +1,104 @@
+/*******************
+ Feedback Starts
+********************/
+
+#feedback {
+    background: $primaryColor;
+    padding: 100px 0;
+
+    .feedbackTitle {
+
+        h3 {
+            font-family: $primaryFont;
+            font-size: 32px;
+            font-weight: 700;
+            color: $white;
+            text-transform: inherit;
+        }
+
+        p {
+            font-family: $secondaryFont;
+            font-size: 16px;
+            font-weight: 400;
+            color: $white;
+            text-transform: inherit;
+            position: relative;
+            border-bottom: 2px solid $secondaryColor;
+            display: inline-block;
+        }
+    }
+
+    .feedbackBg {
+        margin-top: 60px;
+        background: url(../img/testimonialBg.jpg) no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        padding: 50px 0;
+
+        .review {
+            background: rgba(31, 35, 54,0.3);
+            outline: 0;
+            padding:25px 0;
+            img {
+                margin: 0 auto;
+                width: 100px;
+                height: 100px;
+            }
+            h3{
+                margin-top: 15px;
+               font-family: $signatureFont;
+                color:$secondaryColor;
+                font-size: 40px;
+            }
+            p{
+                font-family: $secondaryFont;
+                font-size: 14px;
+                line-height: 24px;
+                color:$white;
+                padding: 0 210px;
+            }
+            i{
+                font-size: 14px;
+                color:$secondaryColor;
+            }
+            
+        }
+        .prev{
+                  position: absolute;
+    top: 0;
+    right: 42px;
+    color: #daa520;
+    border: 1px solid #1F2336;
+    padding: 5px;
+    z-index: 99999999;
+            @include transition (.4s);
+            &:hover{
+                background: $secondaryColor;
+                color: $primaryColor;
+                border: none;
+            }
+            
+            }.next{
+                           position: absolute;
+    top: 0;
+    right: 15px;
+    color: #daa520;
+    border: 1px solid #1F2336;
+    padding: 5px;
+    z-index: 99999999;
+                @include transition (.4s);
+                &:hover{
+                background: $secondaryColor;
+                color: $primaryColor;
+                border: none;
+            }
+            
+            }
+    }
+}
+
+
+/*******************
+ Feedback Starts
+********************/
